@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>supermarket</artifactId>
+        <groupId>com.zk</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>app-8084</artifactId>
+
+    <!--Spring框架基本的核心工具-->
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context-support</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-configuration-processor</artifactId>
+    </dependency>
+    <!-- Mysql驱动包 -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+    </dependency>
+    <!-- 日志工具类 -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <!--  图片压缩-->
+    <dependency>
+        <groupId>net.coobird</groupId>
+        <artifactId>thumbnailator</artifactId>
+        <version>0.4.8</version>
+    </dependency>
+    <!-- SpringBoot Web容器 -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!-- SpringBoot 拦截器 -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <!-- swagger2-->
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+    </dependency>
+    <!-- swagger2-UI-->
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+    </dependency>
+    <!-- JSON工具类 -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+    </dependency>
+    <!--SpringBoot集成mybatis-plus框架-->
+    <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+    </dependency>
+    <!--commons框架-->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+    </dependency>
+    <!--io常用工具类 -->
+    <!--<dependency>-->
+        <!--<groupId>commons-io</groupId>-->
+        <!--<artifactId>commons-io</artifactId>-->
+    <!--</dependency>-->
+
+
+    <!--jwt鉴权工具-->
+    <dependency>
+        <groupId>com.auth0</groupId>
+        <artifactId>java-jwt</artifactId>
+    </dependency>
+    <!--httpclient客户端工具-->
+    <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${httpclient.version}</version>
+    </dependency>
+    <!--modelmapper-->
+    <dependency>
+        <groupId>org.modelmapper</groupId>
+        <artifactId>modelmapper</artifactId>
+    </dependency>
+    <!--lombok-->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+</project>
